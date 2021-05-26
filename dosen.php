@@ -6,7 +6,7 @@ $index = 1;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Data PROGRAM STUDI</title>
+<title>Data PROGRAM DOSEN</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
         rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
@@ -17,7 +17,7 @@ $index = 1;
             include 'navbar.php';
         ?>
     <div class="container-fluid">
-        <h1 align="center">DATA PROGRAM STUDI</h1>
+        <h1 align="center">DATA PROGRAM DOSEN</h1>
         <a href="insert_dosen.php"> Tambah Data</a><br>
         <table class="table table-bordered table-dark">
             <thead>
