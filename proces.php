@@ -105,6 +105,7 @@
 
     //jadwal
     if (isset($_POST['submit_jadwal'])) {
+        $jadwal = $_POST['id'];
         $jadwal = $_POST['jdwl'];
         $dosen = $_POST['dosen'];
         $hari = $_POST['hari'];
@@ -120,7 +121,7 @@
         $kelassesi = $_POST['kls'];
 
         $model = new Model();
-        $model->insert_jadwal($jadwal, $dosen, $hari, $tahun, $smt, $matkul, $sesi, $masuk, $keluar, $kelas, $ruang, $status, $kelassesi);
+        $model->insert_jadwal($id, $jadwal, $dosen, $hari, $tahun, $smt, $matkul, $sesi, $masuk, $keluar, $kelas, $ruang, $status, $kelassesi);
         header('location:jadwal.php');
     }
 ?>

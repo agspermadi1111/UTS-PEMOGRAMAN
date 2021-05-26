@@ -23,6 +23,7 @@
             <thead>
                 <tr>
                     <th>No.</th>
+                    <th>ID</th>
                     <th>JADWAL ID</th>
                     <th>KODE DOSEN</th>
                     <th>HARI</th>
@@ -46,6 +47,7 @@
                         foreach ($result as $data) : ?>
                 <tr>
                     <td><?= $index++ ?></td>
+                    <td><?= $data->id ?></td>
                     <td><?= $data->jadwalid ?></td>
                     <td><?= $data->kodedosen ?></td>
                     <td><?= $data->hari ?></td>

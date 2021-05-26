@@ -142,9 +142,9 @@
                 return $baris;
             }   
         }
-        public function insert_jadwal($jadwal, $dosen, $hari, $tahun, $smt, $matkul, $sesi, $masuk, $keluar, $kelas, $ruang, $status, $kelassesi){
-            $sql = "INSERT INTO tbljadwal (jadwalid, kodedosen, hari, thnakademik, semester, kodemk, sesi, jammasuk, jamkeluar, kelas, ruang, status, kelassesi)
-            VALUES ('$jadwal', '$dosen', '$hari', '$tahun', '$smt', '$matkul', '$sesi', '$masuk', '$keluar', '$kelas', '$ruang', '$status', '$kelassesi')";
+        public function insert_jadwal($id,$jadwal, $dosen, $hari, $tahun, $smt, $matkul, $sesi, $masuk, $keluar, $kelas, $ruang, $status, $kelassesi){
+            $sql = "INSERT INTO tbljadwal (id, jadwalid, kodedosen, hari, thnakademik, semester, kodemk, sesi, jammasuk, jamkeluar, kelas, ruang, status, kelassesi)
+            VALUES ('$id', $jadwal', '$dosen', '$hari', '$tahun', '$smt', '$matkul', '$sesi', '$masuk', '$keluar', '$kelas', '$ruang', '$status', '$kelassesi')";
             $this->conn->query($sql);
         }
     }
